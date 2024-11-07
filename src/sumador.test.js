@@ -22,3 +22,7 @@ it("debería sumar números separados por comas o guiones", () => {
   expect(sumar("1-2,3")).toEqual(6);
 });
 
+it("debería aceptar un delimitador personalizado", () => {
+  expect(sumar("//[;]\n6;7;4")).toEqual(17);
+});
+
