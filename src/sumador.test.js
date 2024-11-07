@@ -13,3 +13,8 @@ it("debería retornar el mismo número para una cadena con un solo número", () 
 it("debería sumar dos números separados por coma", () => {
   expect(sumar("1,2")).toEqual(3);
 });
+
+it("debería sumar cadena de números separados por coma", () => {
+  expect(sumar("1,2,4,8")).toEqual(15);
+});
+
