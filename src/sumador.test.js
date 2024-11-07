@@ -18,3 +18,7 @@ it("debería sumar cadena de números separados por coma", () => {
   expect(sumar("1,2,4,8")).toEqual(15);
 });
 
+it("debería sumar números separados por comas o guiones", () => {
+  expect(sumar("1-2,3")).toEqual(6);
+});
+
