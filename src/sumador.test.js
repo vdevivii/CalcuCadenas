@@ -26,3 +26,6 @@ it("debería aceptar un delimitador personalizado", () => {
   expect(sumar("//[;]\n6;7;4")).toEqual(17);
 });
 
+it("debería ignorar números mayores a 1000", () => {
+  expect(sumar("2,1001")).toEqual(2);
+});

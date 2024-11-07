@@ -12,7 +12,9 @@ function sumar(cadena) {
 
   return numeros
     .split(delimitadores)
-    .reduce((acc, num) => acc + parseInt(num, 10), 0);
+    .map(num => parseInt(num, 10))
+    .filter(num => num <= 1000)
+    .reduce((acc, num) => acc + num, 0);
 }
 
 export default sumar;
