@@ -5,3 +5,7 @@ describe("Sumar - Calculadora de cadena", () => {
     expect(sumar("")).toEqual(0);
   });
 });
+
+it("debería retornar el mismo número para una cadena con un solo número", () => {
+  expect(sumar("2")).toEqual(2);
+});
